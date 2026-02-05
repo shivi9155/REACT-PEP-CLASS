@@ -1,28 +1,22 @@
 import React from 'react'
 
-const props = () => {
+const Props = ({details, sum, onClick}) => {
 
-    const car = {
-        name: "Honda",
-        model: "2022",
-        color: "Black"
-    }
-    const Tech = ["JavaScript","Python","React"];
+    
   return (
     <div>
         <h1>Props in React</h1>
-        <h2>{car.name} {car.model} {car.color}</h2>
+        {/* <h2>{car.name} {car.model} {car.color}</h2> */}
        
         <div>
             {
-                Tech.map((item,index) => (
-                 <ul>
-                      <li key={index}>{item.name}</li>
+                details.map((item, index) => (
+                 <ul key={index}>
+                      <li>{item.name} - {item.age}</li>
+                      <li><button onClick={() => sum(4,5)}>Sum</button></li>
+                      <li><button onClick={() => onClick()}>Click Me</button></li>
+                      <button onClick={() => dbClick()}>Double Click</button>
                  </ul>
-
-
-
-
                 ))
             }
         </div>
@@ -31,4 +25,4 @@ const props = () => {
   )
 }
 
-export default props
+export default Props

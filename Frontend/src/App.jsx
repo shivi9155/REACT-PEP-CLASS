@@ -1,19 +1,77 @@
+// import React from 'react'
+// import Student from './Student'
+// import Props from './props/props.jsx'
+
+// const App = () => {
+//   // const car = { name: 'Honda', model: '2022', color: 'Black' }
+//   // const Tech = ['JavaScript', 'Python', 'React']
+//   const details = [
+//         {name:"Shivani" ,age:20},
+//         {name:"Shraddha",age:21}
+//     ]
+
+//     function sum(a,b){
+//        console.log(a+b);
+//     }
+//     function handleClick(){
+//       alert("Single Clicked");
+//     }
+//     function dbClick() {
+//        alert("Double Clicked")
+//     }
+//   return (
+//     <div>
+//       {/* <h1>Hello React</h1>
+//       <Student/> */}
+//       {/* <Props name={car.name} model={car.model} color={car.color}/> */}
+//       {/* <Props tech={Tech}/> */}
+//         <Props details={details} sum={sum} onClick={handleClick} dbClick={dbClick}/>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from "react";
+// class Props extends React.Component{
+
+//   constructor(){
+//     super();
+//     this.state = {
+//       users:[]
+//     }
+//   }
+//   fetchUsers=() => {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(res=>res.json())
+//     .then(data=>this.setState({users:data}))
+//   }
+//   render(){
+//     return(
+//       <>
+//        <h1>Welcome</h1>
+//       <Props users={this.state.users}/>
+//       </>
+     
+//     )
+//   }
+// }
+// export default Props;
+
 import React from 'react'
-import Student from './Student'
-import Props from './props/props.jsx'
+class Props extends React.Component(
+  render(){
+    return(
+     
 
-const App = () => {
-  const car = { name: 'Honda', model: '2022', color: 'Black' }
-  const Tech = ['JavaScript', 'Python', 'React']
+    )
+  }
 
-  return (
-    <div>
-      {/* <h1>Hello React</h1>
-      <Student/> */}
-      <Props name={car.name} model={car.model} color={car.color}/>
-      {/* <Props tech={Tech}/> */}
-    </div>
-  )
-}
+    
+  
+)
 
-export default App
+export default Props;
