@@ -61,17 +61,45 @@
 // }
 // export default Props;
 
-import React from 'react'
-class Props extends React.Component(
-  render(){
-    return(
+// import React from 'react'
+// class Props extends React.Component(
+//   render(){
+//     return(
      
 
-    )
-  }
+//     )
+//   }
 
     
   
-)
+// )
 
-export default Props;
+// export default Props;
+
+
+
+
+
+
+import React from 'react'
+import UseState from './Hooks/UseState'
+import Practice from './Hooks/Practice'
+import Count  from './Hooks/Count.jsx'
+import Disable from './Hooks/Disable.jsx'
+import Fetch from './Hooks/fetch.jsx'
+import UseRef from './Hooks/UseRef.jsx'
+
+export default function App() {
+  return (
+    <div>
+      {/* <UseState/> */}
+      {/* <Count/>
+      <Disable/>
+      <Practice/> */}
+      <UseRef/>
+      {/* <Fetch/> */}
+      
+      
+    </div>
+  )
+}
