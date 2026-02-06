@@ -84,21 +84,23 @@
 import React from 'react'
 import UseState from './Hooks/UseState'
 import Practice from './Hooks/Practice'
-import Count  from './Hooks/Count.jsx'
+import Count from './Hooks/Count.jsx'
 import Disable from './Hooks/Disable.jsx'
 import Fetch from './Hooks/fetch.jsx'
 import UseRef from './Hooks/UseRef.jsx'
+import App from './Hooks/UseReftimer.jsx'
 
-export default function App() {
+export default function AppComponent() {
   return (
     <div>
       {/* <UseState/> */}
       {/* <Count/>
       <Disable/>
       <Practice/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
       {/* <Fetch/> */}
       
+      <App />
       
     </div>
   )
