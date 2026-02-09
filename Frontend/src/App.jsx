@@ -82,15 +82,18 @@
 
 
 import React from 'react'
-import UseState from './Hooks/UseState'
-import Practice from './Hooks/Practice'
-import Count from './Hooks/Count.jsx'
-import Disable from './Hooks/Disable.jsx'
-import Fetch from './Hooks/fetch.jsx'
-import UseRef from './Hooks/UseRef.jsx'
-import App from './Hooks/UseReftimer.jsx'
+// import UseState from './Hooks/UseState'
+// import Practice from './Hooks/Practice'
+// import Count from './Hooks/Count.jsx'
+// import Disable from './Hooks/Disable.jsx'
+// import Fetch from './Hooks/fetch.jsx'
+// import UseRef from './Hooks/UseRef.jsx'
+// import UseRefTimer from './Hooks/UseReftimer.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import BrowserRoute1 from './Hooks/BrowserRoute1.jsx'
 
 export default function AppComponent() {
+
   return (
     <div>
       {/* <UseState/> */}
@@ -98,9 +101,15 @@ export default function AppComponent() {
       <Disable/>
       <Practice/> */}
       {/* <UseRef/> */}
+
       {/* <Fetch/> */}
       
-      <App />
+      {/* <UseRefTimer /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/useref' element={<BrowserRoute1/>}/>
+        </Routes>
+      </BrowserRouter>
       
     </div>
   )

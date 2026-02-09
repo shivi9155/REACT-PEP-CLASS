@@ -17,7 +17,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-sans  bg-gradient-to-r from-blue-500 to-indigo-200 text-black">
       
       <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <div className="flex justify-between items-center px-8 py-4">
@@ -66,20 +66,11 @@ export default function Portfolio() {
 
       <section id="projects" className="min-h-screen p-16">
         <h2 className="text-4xl font-bold mb-10">Projects</h2>
+        <input placeholder="DayCare Management System" className="border-2 rounded-lg p-4 bg-white m-2" href=''/>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((project) => (
-            <div
-              key={project}
-              className="p-6 rounded-2xl shadow-lg border hover:shadow-xl transition"
-            >
-              <h3 className="text-2xl font-semibold">DayCare Management</h3>
-              <p className="mt-2 text-gray-600">
-                Description about the project goes here.
-              </p>
-            </div>
-          ))}
-        </div>
+        
+          <input placeholder="DayCare Management System" className="border-2 rounded-lg p-4 bg-white m-2"/>
+            <input placeholder="DayCare Management System" className="border-2 rounded-lg p-4 bg-white"/>
       </section>
 
       <section id="contact" className="min-h-screen p-16 bg-gray-100">
