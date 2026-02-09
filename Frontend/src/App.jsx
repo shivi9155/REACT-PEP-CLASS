@@ -68,18 +68,10 @@
      
 
 //     )
-//   }
-
-    
-  
+//   }  
 // )
 
 // export default Props;
-
-
-
-
-
 
 import React from 'react'
 // import UseState from './Hooks/UseState'
@@ -91,6 +83,7 @@ import React from 'react'
 // import UseRefTimer from './Hooks/UseReftimer.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BrowserRoute1 from './Hooks/BrowserRoute1.jsx'
+import UseMemo from './Hooks/UseMemo.jsx'
 
 export default function AppComponent() {
 
@@ -104,13 +97,14 @@ export default function AppComponent() {
 
       {/* <Fetch/> */}
       
-      {/* <UseRefTimer /> */}
+      {/* <UseRefTimer />
       <BrowserRouter>
         <Routes>
-          <Route path='/useref' element={<BrowserRoute1/>}/>
+          <Route path='/useref' element={<BrowserRoute1/>} />
+          <Route path='/useref/:id' element={<BrowserRoute1/>} />
         </Routes>
-      </BrowserRouter>
-      
+      </BrowserRouter> */}
+      <UseMemo/>
     </div>
   )
 }
