@@ -1,19 +1,28 @@
-import React, { useMemo, useState } from 'react'
+import React from 'react'
 
-export default function UseMemo() {
+const UseMemo = () => {
+const [count, setCount] = React.useState(0)
 
-    const [count,setCount] = useState(0);
-    const [text,setText] = useState("");
-    const doubleC = useMemo(() => {
-        console.log("Calculating doubleC")
-        return count*2;
+const [text ,setText] = React.useState("")
+const memoizedValue = React.useMemo(() => {
+  console.log('Calculating memoized value...')
+  return count * 2;
+}, [count])
+// const memoizedValue = () => {
+//   console.log("multiply")
+//   return count * 2
+// }
 
-    },[count])
+
   return (
     <div>
-        <h1>{count}</h1>
-        <h1>{doubleC}</h1>
-      <button onClick={() => setCount(count+1)}>Inc</button>
+      <h1>{count}</h1>
+      <h2>{memoizedValue}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <input type="text" onChange={(e)=>setText(e.target.value)}/>
+      <input type="checkbox" name="" id="" />
     </div>
   )
 }
+
+export default UseMemo

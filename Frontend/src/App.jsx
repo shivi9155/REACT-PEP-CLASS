@@ -73,7 +73,7 @@
 
 // export default Props;
 
-import React from 'react'
+
 // import UseState from './Hooks/UseState'
 // import Practice from './Hooks/Practice'
 // import Count from './Hooks/Count.jsx'
@@ -81,14 +81,17 @@ import React from 'react'
 // import Fetch from './Hooks/fetch.jsx'
 // import UseRef from './Hooks/UseRef.jsx'
 // import UseRefTimer from './Hooks/UseReftimer.jsx'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import BrowserRoute1 from './Hooks/BrowserRoute1.jsx'
-import UseMemo from './Hooks/UseMemo.jsx'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import BrowserRoute1 from './Hooks/BrowserRoute1.jsx'
+// import UseMemo from './Hooks/UseMemo.jsx'
+// import UseCallback from './Hooks/UseCallback.jsx'
+// // import Counter from './Hooks/Counter.jsx'
+// import { CounterContext } from "../context/Counter.jsx";
 
-export default function AppComponent() {
+// export default function AppComponent() {
 
-  return (
-    <div>
+  // return (
+  //   <div>
       {/* <UseState/> */}
       {/* <Count/>
       <Disable/>
@@ -97,14 +100,56 @@ export default function AppComponent() {
 
       {/* <Fetch/> */}
       
-      {/* <UseRefTimer />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/useref' element={<BrowserRoute1/>} />
-          <Route path='/useref/:id' element={<BrowserRoute1/>} />
-        </Routes>
-      </BrowserRouter> */}
-      <UseMemo/>
+       {/* <UseRefTimer /> */}
+      {/* <Counter/> */}
+      // <BrowserRouter>
+      //   <Routes>
+          {/* <Route path='/useref' element={<BrowserRoute1/>} />
+          <Route path='/useref/:id' element={<BrowserRoute1/>} /> */}
+          {/* <Route path='/callback' element={<UseCallback/>}/> */}
+          // <Route path='/counter' element={<Counter/>}/>
+
+          
+      {/* <UseMemo/> */}
+      
+//          </Routes>
+//       </BrowserRouter> 
+      
+//     </div>
+//   )
+// }
+
+
+
+// import React from "react";
+// import Counter from "./Hooks/Counter.jsx";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <h1>Context API Example</h1>
+//       <Child />
+//     </div>
+//   );
+// }
+
+
+
+import ProductCart from "./ProductCart";
+import Cart from "./Cart";
+function App() {
+  return (
+    <div>
+     <h1>Shopping Cart</h1>
+     <ProductCart/>
+     <Cart/>
+
     </div>
-  )
+  );
 }
+
+export default App;
+
+
+
+
