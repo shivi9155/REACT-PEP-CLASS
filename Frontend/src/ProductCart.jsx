@@ -1,29 +1,27 @@
-import { useContext, useEffect, useState } from "react";
+import { useState, useEffect, useContext } from "react";
 import { CartContext } from "./context/CartContext";
 
-const ProductList = () => {
-
+function ProductList() {
   const [products, setProducts] = useState([]);
-
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data.products))   
-      .catch((err) => console.log(err));
+      .then(res => res.json())
+      .then(data => setProducts(data.products));
   }, []);
 
   return (
     <div>
       <h2>Products</h2>
 
-      {products.map((item) => (
-        <div key={item.id}>
-          <h4>{item.title}</h4>
-          <p>₹{Math.floor(item.price * 80)}</p>
+      {products.map(product => (
+        // <div key={product.id}>
+        //   <p>{product.title}</p>
+        <div>
+          <p>₹{product.price}</p>
 
-          <button onClick={() => addToCart(item)}>
+          <button onClick={() => addToCart(product)}>
             Add To Cart
           </button>
 
@@ -32,6 +30,6 @@ const ProductList = () => {
       ))}
     </div>
   );
-};
+}
 
 export default ProductList;

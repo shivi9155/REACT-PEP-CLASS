@@ -8,7 +8,7 @@ const memoizedValue = React.useMemo(() => {
   console.log('Calculating memoized value...')
   return count * 2;
 }, [count])
-// const memoizedValue = () => {
+ 5.// const memoizedValue = () => {
 //   console.log("multiply")
 //   return count * 2
 // }

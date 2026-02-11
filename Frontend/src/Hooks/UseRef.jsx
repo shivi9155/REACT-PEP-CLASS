@@ -1,7 +1,7 @@
 import React,{useRef, useState, useEffect} from 'react'
 
 const UseRef = () => {
-    // const inputRef=useRef(null);
+  6  // const inputRef=useRef(null);
     // const scrollTo=useRef(null);
     // const [count, setCount]=useState(0)
     // const ref=useRef(0)

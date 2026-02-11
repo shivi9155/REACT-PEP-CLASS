@@ -8,7 +8,7 @@ const UseCallback1 = React.memo(({handleClick}) => {
     </div>
   )
 })
-// import React from 'react'
+  2.// import React from 'react'
 
 // const UseCallback1 = ({ handleClick }) => {
 //     console.log("Child Component Rendered");

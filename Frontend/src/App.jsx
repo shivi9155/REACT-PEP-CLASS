@@ -122,29 +122,78 @@
 
 
 // import React from "react";
-// import Counter from "./Hooks/Counter.jsx";
+// // import Counter from "./Hooks/UseLayout.jsx";
+// // import UseLayout from "./Hooks/UseLayout.jsx";
+// import UseSearchParams from "./Hooks/UseSearchParams.jsx";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// export default function App() {
+// function App() {
+//   return (
+   
+
+//       <BrowserRouter>
+//       <div>
+          
+//         <UseSearchParams/>
+//       </div>
+//         {/* <Routes> */}
+//           {/* <Route path="/counter" element={<Counter />} /> */}
+//           {/* <Route path="/layout" element={<UseLayout />} />
+//           <Route path="/search" element={<UseSearchParams />} />
+//         </Routes> */}
+
+
+//       </BrowserRouter>
+    
+  
+   
+     
+    
+//   );
+// }
+
+// export default App;
+
+
+// import ProductCart from "./ProductCart";
+// import Cart from "./Cart";
+// function App() {
 //   return (
 //     <div>
-//       <h1>Context API Example</h1>
-//       <Child />
+//      <h1>Shopping Cart</h1>
+//      <ProductCart/>
+//      <Cart/>
+
 //     </div>
 //   );
 // }
 
+// export default App;
 
 
-import ProductCart from "./ProductCart";
-import Cart from "./Cart";
+
+
+
+
+
+// import ProductCart from "./Context/ProductCart";
+// import Cart from "./Context/Cart";
+// import { CartProvider } from "./Context/CartContext";
+// import UseLayout from './Hooks/useLayout';
+import { BrowserRouter } from "react-router-dom";
+import UseSearchParams from './Hooks/UseSearchParams';
+
 function App() {
   return (
-    <div>
-     <h1>Shopping Cart</h1>
-     <ProductCart/>
-     <Cart/>
-
-    </div>
+    <BrowserRouter>
+      <div>
+        {/* <h1>Shopping Cart</h1> */}
+        {/* <ProductCart/> */}
+        {/* <Cart/> */}
+        {/* <UseLayout/> */}
+        <UseSearchParams/>
+      </div>
+    </BrowserRouter>
   );
 }
 
