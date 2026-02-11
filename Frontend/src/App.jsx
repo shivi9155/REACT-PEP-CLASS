@@ -180,25 +180,44 @@
 // import Cart from "./Context/Cart";
 // import { CartProvider } from "./Context/CartContext";
 // import UseLayout from './Hooks/useLayout';
-import { BrowserRouter } from "react-router-dom";
-import UseSearchParams from './Hooks/UseSearchParams';
+// import { BrowserRouter } from "react-router-dom";
+// import UseSearchParams from './Hooks/UseSearchParams';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div>
+// function App() {
+//   return (
+//     <BrowserRouter>
+      // <div>
         {/* <h1>Shopping Cart</h1> */}
         {/* <ProductCart/> */}
         {/* <Cart/> */}
         {/* <UseLayout/> */}
-        <UseSearchParams/>
+        {/* <UseSearchParams/>
       </div>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App; */}
 
 
+
+
+
+import { useSelector, useDispatch } from 'react-redux'
+import { increment, decrement, reset } from './Redux/Store/CreateSlice'
+function App() {
+  const count = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
+
+  return (
+    <div>
+      <h1>Counter: {count}</h1>
+      <button onClick={() => dispatch(increment())}>Increment</button>
+      <button onClick={() => dispatch(decrement())}>Decrement</button>
+      <button onClick={() => dispatch(reset())}>Reset</button>
+    </div>
+  )
+}
+export default App
 
 
